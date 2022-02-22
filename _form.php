@@ -35,7 +35,7 @@
                 </div>
                 <div class="form-group">
                     <label>Phone</label>
-                    <input name="phone" value="<?php echo $user['phone'] ?>" class="form-control  <?php echo $errors['phone'] ? 'is-invalid' : '' ?>">
+                    <input name="phone" value="<?php echo $user['phone'] ?>" class="form-control <?php echo $errors['phone'] ? 'is-invalid' : ''?>">
                     <div class="invalid-feedback">
                         <?php echo  $errors['phone'] ?>
                     </div>
