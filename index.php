@@ -3,10 +3,6 @@
 require 'users/users.php';
 
 $users = getUsers();
-// echo '<pre>';
-// var_dump($users);
-// exit;
-
 
 include 'partials/header.php';
 ?>
@@ -29,36 +25,36 @@ include 'partials/header.php';
             </tr>
         </thead>
         <tbody>
-       <?php foreach ($users as $user): ?>
+            <?php foreach ($users as $user) : ?>
 
-        <!-- <?php echo $user['id'] ?> -->
+                <?php echo $user['id'] ?>
 
-            <tr>
-                <td>
-                    <?php if (isset($user['extension'])): ?>
-                        <img style="width: 60px" src="<?php echo "users/images/${user['id']}.${user['extension']}" ?>" alt="">
-                    <?php endif; ?>
-                </td>
-                <td><?php echo $user['name'] ?></td>
-                <td><?php echo $user['username'] ?></td>
-                <td><?php echo $user['email'] ?></td>
-                <td><?php echo $user['phone'] ?></td>
-                <td>
-                    <a target="_blank" href="http://<?php echo $user['extension'] ?>">
-                        <?php echo $user['website'] ?>
-                    </a>
-                </td>
-                <td>
-                    <a href="view.php?id=<?php echo $user['id'] ?>" class="btn btn-sm btn-outline-info">View</a>
-                    <a href="update.php?id=<?php echo $user['id'] ?>"
-                       class="btn btn-sm btn-outline-secondary">Update</a>
-                    <form method="POST" action="delete.php">
-                        <input type="hidden" name="id" value="<?php echo $user['id'] ?>">
-                        <button class="btn btn-sm btn-outline-danger">Delete</button>
-                    </form>
-                </td>
-            </tr>
-        <?php endforeach;; ?>
+                <tr>
+                    <td>
+                        <?php if (isset($user['extension'])) : ?>
+                            <img style="width: 60px" src="<?php echo "users/images/${user['id']}.${user['extension']}" ?>" alt="">
+                        <?php endif; ?>
+                    </td>
+                    <td><?php echo $user['name'] ?></td>
+                    <td><?php echo $user['username'] ?></td>
+                    <td><?php echo $user['email'] ?></td>
+                    <td><?php echo $user['phone'] ?></td>
+                    <td>
+                        <a target="_blank" href="http://<?php echo $user['extension'] ?>">
+                            <?php echo $user['website'] ?>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="view.php?id=<?php echo $user['id'] ?>" class="btn btn-sm btn-outline-info">View</a>
+                        <a href="update.php?id=<?php echo $user['id'] ?>" class="btn btn-sm btn-outline-secondary">Update</a>
+                        
+                        <form method="POST" action="delete.php">
+                            <input type="hidden" name="id" value="<?php echo $user['id'] ?>">
+                            <button class="btn btn-sm btn-outline-danger">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            <?php endforeach;; ?>
         </tbody>
     </table>
 </div>
