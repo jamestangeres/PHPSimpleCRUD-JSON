@@ -7,8 +7,8 @@ if (!isset($_GET['id'])) {
     exit;
 }
 
-$userId = $_GET['id'];
 
+$userId = $_GET['id'];
 $user = getUserById($userId);
 
 if (!$user) {
@@ -16,14 +16,26 @@ if (!$user) {
     exit;
 }
 
+$errors = [
+    'name' => "",
+    'username' => "",
+    'email' => "",
+    'phone' => "",
+    'website' => "",
+];
+$isValid = true;
+
 if ($_SERVER["REQUEST_METHOD"] === 'POST') {
-    $user = updateUser($_POST, $userId);
-
-    uploadImage($_FILES['picture'], $user);
-
-    header("Location: index.php");
+    $user = array_merge($user, $_POST);
+    
+    $isValid = validateUser($user, $errors);
+    
+    if ($isValid) {
+        $user = updateUser($_POST, $userId);
+        uploadImage($_FILES['picture'], $user);
+        header("Location: index.php");
+    }
 }
-
 
 ?>
 <?php include '_form.php' ?>

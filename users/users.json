@@ -3,10 +3,10 @@
         "id": 4,
         "name": "Patricia Lebsack_1",
         "username": "Karianne_",
-        "email": "Julianne.OConner@kory.org_",
-        "phone": "123451234_",
+        "email": "Julianne.OConner@kory.org",
+        "phone": "123451234",
         "website": "kale.biz_",
-        "extension": "webp"
+        "extension": "jpg"
     },
     {
         "id": 6,
@@ -15,14 +15,14 @@
         "email": "Karley_Dach@jasper.info",
         "phone": "1078412367",
         "website": "ola.org",
-        "extension": "jpg"
+        "extension": "webp"
     },
     {
         "id": 7,
         "name": "Kurtis Weissnat",
         "username": "Elwyn.Skiles",
-        "email": "Telly.Hoeger@billy.biz",
-        "phone": "210.067.6132",
+        "email": "TellyHoeger@billy.biz",
+        "phone": "12121212",
         "website": "elvis.io",
         "extension": "jpg"
     },
@@ -31,16 +31,16 @@
         "name": "Nicholas Runolfsdottir V",
         "username": "Maxime_Nienow",
         "email": "Sherwood@rosamond.me",
-        "phone": "586.493.6943 x140",
+        "phone": "123123123",
         "website": "jacynthe.com",
-        "extension": "webp"
+        "extension": "jpg"
     },
     {
         "id": 9,
         "name": "Glenna Reichert",
         "username": "Delphine",
         "email": "Chaim_McDermott@dana.io",
-        "phone": "(775)976-6794 x41206",
+        "phone": "775976679441206",
         "website": "conrad.com",
         "extension": "jpg"
     },
@@ -49,24 +49,15 @@
         "name": "Clementina DuBuque",
         "username": "Moriah.Stanton",
         "email": "Rey.Padberg@karina.biz",
-        "phone": "024-648-3804",
-        "website": "ambrose.net",
+        "phone": "12121",
+        "website": "telegram.com",
         "extension": "webp"
     },
     {
-        "name": "James Doe_",
-        "username": "jamesdoe",
-        "email": "jamesdoe@gmail.com",
-        "phone": "88888",
-        "website": "jamesdoe.com",
-        "id": 1452,
-        "extension": "jpg"
-    },
-    {
         "name": "Patricia Lebsack ha",
-        "username": "Patricia Lebsack ha",
+        "username": "Patricia Lebsack",
         "email": "marianne@winterwind.com",
-        "phone": "123451234  11",
+        "phone": "121212",
         "website": "patricia.test",
         "id": 1458,
         "extension": "jpg"

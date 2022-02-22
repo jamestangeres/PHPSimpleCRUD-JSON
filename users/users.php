@@ -32,6 +32,13 @@ function createUser($data)
     return $data;
 }
 
+/**
+ * updateUser
+ *
+ * @param  mixed $data
+ * @param  mixed $id
+ * @return void
+ */
 function updateUser($data, $id)
 {
     $updateUser = [];
@@ -94,6 +101,37 @@ function putJson($users)
     file_put_contents(__DIR__ . '/users.json', json_encode($users, JSON_PRETTY_PRINT));
 }
 
-function validateUser()
-{
+
+/**
+ * validateUser
+ *
+ * @param  mixed $user
+ * @param  mixed $errors
+ * @return void
+ */
+
+ // study how ampersand works in parameter
+function validateUser($user, &$errors)
+{   
+    $isValid = true;
+    // Start of validation
+    if (!$user['name']) {
+        $isValid = false;
+        $errors['name'] = 'Name is mandatory';
+    }
+    if (!$user['username'] || strlen($user['username']) < 6 || strlen($user['username']) > 16) {
+        $isValid = false;
+        $errors['username'] = 'Username is required and it must be more than 6 and less then 16 character';
+    }
+    if (!$user['email'] || !filter_var($user['email'], FILTER_VALIDATE_EMAIL)) {
+        $isValid = false;
+        $errors['email'] = 'This must be a valid email address';
+    }
+    if (!filter_var($user['phone'], FILTER_VALIDATE_INT)) {
+        $isValid = false;
+        $errors['phone'] = 'This must be a valid phone number';
+    }
+    // End Of validation
+
+    return $isValid;
 }
