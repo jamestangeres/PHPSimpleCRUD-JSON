@@ -45,30 +45,12 @@
         "extension": "jpg"
     },
     {
-        "id": 10,
-        "name": "Clementina DuBuque",
-        "username": "Moriah.Stanton",
-        "email": "Rey.Padberg@karina.biz",
-        "phone": "024-648-3804",
-        "website": "ambrose.net",
-        "extension": "webp"
-    },
-    {
-        "name": "James Doe_",
-        "username": "jamesdoe",
-        "email": "jamesdoe@gmail.com",
+        "name": "olsin",
+        "username": "olsin",
+        "email": "olsin@gmail.com",
         "phone": "88888",
-        "website": "jamesdoe.com",
-        "id": 1452,
-        "extension": "jpg"
-    },
-    {
-        "name": "Patricia Lebsack ha",
-        "username": "Patricia Lebsack ha",
-        "email": "marianne@winterwind.com",
-        "phone": "123451234  11",
-        "website": "patricia.test",
-        "id": 1458,
+        "website": "olsin.com",
+        "id": 1023,
         "extension": "jpg"
     }
 ]

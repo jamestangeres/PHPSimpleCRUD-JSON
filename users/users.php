@@ -62,6 +62,7 @@ function deleteUser($id)
             array_splice($users, $i, 1);
         }
     }
+    
     putJson($users);
 }
 

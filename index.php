@@ -26,9 +26,6 @@ include 'partials/header.php';
         </thead>
         <tbody>
             <?php foreach ($users as $user) : ?>
-
-                <?php echo $user['id'] ?>
-
                 <tr>
                     <td>
                         <?php if (isset($user['extension'])) : ?>
